@@ -4,7 +4,7 @@ import "./Style.css";
 function Signup() {
   let navigate = useNavigate();
   // let history = useHistory();
-  const url = "https://memoapp-backend.vercel.app";
+  const url = "https://memobackend.onrender.com";
   const [user, setUser] = useState({ name: "", email: "", password: "" });
   const handleOnSubmit = async (e) => {
     e.preventDefault();
