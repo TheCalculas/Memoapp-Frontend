@@ -4,10 +4,11 @@ import "./Style.css";
 function Login() {
   let navigate = useNavigate();
   // let history = useHistory();
+  const url = "https://memoapp-backend.vercel.app/";
   const [user, setUser] = useState({ email: "", password: "" });
   const handleOnSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch(`http://localhost:5000/api/auth/login`, {
+    const response = await fetch(url + `/api/auth/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
